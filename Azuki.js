@@ -13,9 +13,9 @@ client.on('ready', () => {
     .setColor([51, 178, 255])
     .setThumbnail(client.users.get('148016257231224832').avatarURL)
     .setFooter('Azuki by TheNekoFelina#7651')
-    .addField('Servers', `${client.guilds.size}`, true)
-    .addField('Users', `${client.users.size}`, true)
-    .addField('Time', `${moment().format('LLLL')}`, false);
+    .addField('Servers:', `${client.guilds.size}`, true)
+    .addField('Users:', `${client.users.size}`, true)
+    .addField('Time:', `${moment().format('LLLL')}`, false);
 
   console.log(`Logged in as ${client.user.tag}!`);
   client.channels.get('340514054533677057').sendEmbed(ready);
