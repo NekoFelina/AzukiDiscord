@@ -789,4 +789,4 @@ client.on('message', msg => {
 	if (commands.hasOwnProperty(msg.content.toLowerCase().slice(tokens.prefix.length).split(' ')[0])) commands[msg.content.toLowerCase().slice(tokens.prefix.length).split(' ')[0]](msg);
 });
 
-client.login('MzQwNDc0NjQ0NTY3OTQ5MzEz.DFzDPQ.5bP6pHpR-i3UKgChcaY6C2O5vh8');
+client.login(tokens.token);
